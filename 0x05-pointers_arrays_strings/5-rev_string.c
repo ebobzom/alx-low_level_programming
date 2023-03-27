@@ -1,25 +1,17 @@
-  include "main.h"
+#include "main.h"
+#include <stdio.h>
 
-  /** 
-   * rev_string - Write a function that reverses a string
-   * 
-   * @s: string var pointer 
-   */
-   void rev_string(char *s) 
-  {
-     int i, j, temp;
-       i= 0;
-       j= 0;
-
-     while (s[i] != '\0' ) 
-     {
-            j++;
-} 
-       j--;
-       while (j>i) 
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-     temp = s[j];
-     s[j--] = s[i];
-     s[i++] = temp;
+    char s[10] = "Holberton";
+
+    printf("%s\n", s);
+    rev_string(s);
+    printf("%s\n", s);
+    return (0);
 } 
-    } 
